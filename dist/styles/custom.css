@@ -1,0 +1,117 @@
+@font-face{
+	font-family: sw;
+	src: url(../fonts/sw.ttf);
+}
+* {
+	box-sizing: border-box;
+}
+html {
+	font-family: sw;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	background-color: rgb(23, 23, 84);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 80%;
+}
+#content {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#header {
+	height: 140px;
+	background-color: rgb(9, 79, 76);
+	color: #fff;
+}
+#header h1 {
+	line-height: 150px;
+	font-size: 50px;
+	letter-spacing: 0.5rem;
+	margin: 0;
+	text-align: center;
+	text-shadow: 0px 0px 36px rgb(19, 90, 25);
+}
+#nav {
+	height: 180px;
+	display: inline-block;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 3px;
+	background-color: rgba(14, 98, 48, 0.9);
+}
+.tab {
+	display: block;
+	cursor: pointer;
+	padding-bottom: 10px;
+	border: 0;
+	border-radius: 50%;
+	font-family: inherit;
+	border-top: 4px solid rgba(14, 93, 48, 0.9);
+	border-bottom: 4px solid rgba(14, 93, 48, 0.9);
+	box-shadow: inset 0px 0 7px 30px rgb(37, 16, 41);
+	background-color: rgb(22, 135, 152);
+	transition-duration: 0.5s;
+}
+.tab:hover,
+  .tab:focus {
+	background-color: rgb(18, 93, 164);
+}
+
+.tab:hover span,
+.tab:focus span {
+	color: rgb(5, 121, 139);
+	text-shadow: 0px 0px 12px rgb(19, 90, 25);
+	font-size: 32px;
+}
+
+.tab span {
+	color: rgb(175, 217, 231);
+	font-size: 28px;
+	letter-spacing: 0.2rem;
+	text-shadow: 2px 10px 15px rgb(0, 0, 0);
+	transition: 0.1s;
+}
+#tab-content {
+	padding: 40px;
+	min-height: 800px;
+	color: #fff;
+	background: rgb(124, 128, 208);
+	animation: appear 1s ease-in-out;
+}
+@keyframes appear {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+.flex-lay {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.grid-lay {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+}
+.section {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+.section-title {
+	font-size: 35px;
+	text-shadow: 0 0 10px orange;
+}
+.section-description {
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 0 0 10px orangered;
+}
