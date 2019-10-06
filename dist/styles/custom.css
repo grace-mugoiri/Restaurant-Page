@@ -46,7 +46,6 @@ body {
 	cursor: pointer;
 	padding-bottom: 10px;
 	border: 0;
-	border-radius: 50%;
 	font-family: inherit;
 	border-top: 4px solid rgba(14, 93, 48, 0.9);
 	border-bottom: 4px solid rgba(14, 93, 48, 0.9);
@@ -114,4 +113,15 @@ body {
 	font-size: 20px;
 	text-align: center;
 	text-shadow: 0 0 10px orangered;
+}
+#footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	color: bisque;
+	text-align: center;
+	font-size: 17px;
+	text-shadow: 0 0 10 orangered;
+	background-color: rgba(14, 98, 48, 0.9);
 }
