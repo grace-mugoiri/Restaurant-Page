@@ -1,18 +1,17 @@
-import loadHomePage from './modules/home';
 import loadMainPage from './modules/mainPage';
-import loadMenuPage from './modules/menu';
 import loadContactPage from './modules/contact';
+import loadHomePage from './modules/home';
+import loadMenuPage from './modules/menu';
 
-init();
 
 function navBar() {
 	const homeButton = document.getElementById('home');
-	const menuButton = document.getElementById('menu');
 	const contactButton = document.getElementById('contact');
+	const menuButton = document.getElementById('menu');
 
 	homeButton.addEventListener('click', loadHomePage);
-	menuButton.addEventListener('click', loadMenuPage);
 	contactButton.addEventListener('click', loadContactPage);
+	menuButton.addEventListener('click', loadMenuPage);
 
 }
 function init() {
@@ -20,3 +19,4 @@ function init() {
 	loadHomePage();
 	navBar();
 }
+init();

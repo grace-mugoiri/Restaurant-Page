@@ -1,16 +1,18 @@
-function setButtonActive(id) {
-	const activeButton = document.querySelector('.tab.active');
-	if (activeButton) activeButton.classList.remove('active');
+function setActiveButton(id) {
+	const activeBtn = document.querySelector('.tab.active');
+	if (activeBtn) activeBtn.classList.remove('active');
 
 	const homeButton = document.getElementById(id);
 	homeButton.classList.add('active');
 }
+
 function createFood(src, text, price, alt) {
 	const food = document.createElement('div');
 	food.classList.add('food');
-	const img = document.createElement('img');
-	img.setAttribute('src', src);
-	img.setAttribute('alt', alt);
+
+	const image = document.createElement('div');
+	image.setAttribute('src', src);
+	image.setAttribute('alt', alt);
 
 	const description = document.createElement('div');
 	description.classList.add('description');
@@ -24,18 +26,18 @@ function createFood(src, text, price, alt) {
 	description.appendChild(foodName);
 	description.appendChild(foodPrice);
 
-	food.appendChild(img);
+	food.appendChild(image);
 	food.appendChild(description);
 	return food;
 }
 
-function loadMenuButton() {
+function loadMenuPage() {
 	const content = document.getElementById('tab-content');
 	content.classList.add('grid-lay');
 	content.classList.remove('flex-lay');
 
 	content.textContent = '';
-	setButtonActive('menu');
+	setActiveButton('menu');
 
 	const foods = [
 		createFood(
@@ -79,4 +81,4 @@ function loadMenuButton() {
 		content.appendChild(food);
 	});
 }
-export default loadMenuButton;
+export default loadMenuPage;

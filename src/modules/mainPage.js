@@ -24,8 +24,12 @@ function createNav(id) {
 	nav.setAttribute('id', id);
 
 	const homeButton = createButton('home', 'home');
+	const menuButton = createButton('menu', 'menu');
+	const contactButton = createButton('contact', 'contact');
 
 	nav.appendChild(homeButton);
+	nav.appendChild(menuButton);
+	nav.appendChild(contactButton);
 	return nav;
 }
 
