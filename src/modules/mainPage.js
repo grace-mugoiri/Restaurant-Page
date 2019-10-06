@@ -57,7 +57,7 @@ function loadMainPage() {
 	const tabContent = createMainLoad('tab-content');
 	content.appendChild(tabContent);
 
-	const footer = createFooter('footer', 'Epitomy Of Happiness');
+	const footer = createFooter('footer', ' Epitomy Of Happiness \u00A9 2019 ');
 	content.appendChild(footer);
 
 }
