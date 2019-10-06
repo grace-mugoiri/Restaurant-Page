@@ -1,4 +1,17 @@
-import _ from 'lodash';
+import loadHomePage from './modules/home';
+import loadMainPage from './modules/mainPage';
 
-console.log("Hello Resaturant Page");
+init();
 
+function navBar() {
+	const homeButton = document.getElementById('home');
+
+	homeButton.addEventListener('click', loadHomePage);
+
+}
+function init() {
+	loadMainPage();
+	loadHomePage();
+
+	navBar();
+}
