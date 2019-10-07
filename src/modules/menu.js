@@ -10,7 +10,7 @@ function createFood(src, text, price, alt) {
 	const food = document.createElement('div');
 	food.classList.add('food');
 
-	const image = document.createElement('div');
+	const image = document.createElement('img');
 	image.setAttribute('src', src);
 	image.setAttribute('alt', alt);
 
