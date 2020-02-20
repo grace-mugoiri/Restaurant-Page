@@ -8,8 +8,13 @@ Find it at [here](https://www.theodinproject.com/courses/javascript/lessons/rest
 # stack used
 HTML & CSS and Javascript
 
+# find the live demo here (https://grace-mugoiri.github.io/Restaurant-Page/dist/index.html)
+
 # Starting up the app
 clone the repo to your prefered folder/directory. Then simply open the html file to your prefered browser.
 
 # Author
 @grace-mugoiri
+
+# screenshot of home page 
+
