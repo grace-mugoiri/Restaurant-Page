@@ -13,12 +13,6 @@ function createFood(src, text, price, alt) {
 	const image = document.createElement('img');
 	image.setAttribute('src', src);
 	image.setAttribute('alt', alt);
-	image.addEventListener('click', function(e) {
-		moreInfo();
-	});
-	function moreInfo(e) {
-		return e.description;
-	}
 
 	const description = document.createElement('div');
 	description.classList.add('description');
