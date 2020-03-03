@@ -1,9 +1,12 @@
-
+@font-face{
+	font-family: sw;
+	src: url(../fonts/sw.ttf);
+}
 * {
 	box-sizing: border-box;
 }
 html {
-	font-family: 'Poppins', sans-serif;
+	font-family: sw;
 }
 body {
 	margin: 0;
@@ -37,6 +40,9 @@ body {
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 3px;
 	background-color: rgba(14, 98, 48, 0.9);
+}
+.d-none {
+	display: none;
 }
 .tab {
 	display: inline-block;
@@ -142,45 +148,52 @@ body {
 }
   /* food */
 .food {
-	display: flex;
-	flex-direction: column;
+	position: relative;
+	/* display: flex; */
+	/* flex-direction: column; */
 	background-color: #000;
-	grid-template-columns: repeat(2, 1fr);
+	/* grid-template-columns: repeat(2, 1fr); */
 	border: 4px solid rgba(255, 255, 255, 0.4);
 	box-shadow: 0 0 10px 10px rgba(37, 16, 41, 0.7);
 	width: 640px;
 	height: 320px;
 	transition: 0.4s;
-	overflow: hidden;
+	/* overflow: hidden; */
 	margin: 20px 0;
-	animation: appear 5s ease-in-out;
+	animation: appear 1s ease-in-out;
 }
 .food .description {
-	display: flex;
+	position: absolute;
+	/* transition: 1s; */
+	animation: appear 1s ease-in-out;
+	/* display: none; */
+	z-index: 10;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	/* display: flex; */
 	align-items: center;
 	padding: 20px;
 	justify-content: space-between;
 	background-color: rgba(0, 0, 0, 0.6);
+	/* transition: 0.2s; */
 }
-.food image {
-	width: 50%;
-	height: 50%;
+.food img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 .food:hover .description {
 	letter-spacing: 0.1rem;
 	text-shadow: 0 0 10px rgb(0, 0, 0);
-	transform: translateY(-100%);
+	/* transform: translateY(-100%); */
 }
 .food:hover {
 	box-shadow: 0 0 20px 2px rgba(119, 57, 161, 0.7);
 	border-color: rgb(139, 2, 167);
 }
-
 .food .description h3 {
-	font-size: 18px;
-}
-.food .description h2 {
-	font-size: 16px;
+	font-size: 22px;
 }
 
   /* responsive */

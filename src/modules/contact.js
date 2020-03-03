@@ -39,6 +39,7 @@ function loadContactPage() {
 	const addressNumber = createSection('address', [
 		'Nairobi, Kenya'
 	]);
+
 	content.appendChild(phoneNumber);
 	content.appendChild(addressNumber);
 }

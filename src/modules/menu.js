@@ -13,7 +13,7 @@ function createFood(src, text, price, alt) {
 	const image = document.createElement('img');
 	image.setAttribute('src', src);
 	image.setAttribute('alt', alt);
-
+	
 	const description = document.createElement('div');
 	description.classList.add('description');
 
