@@ -10,7 +10,7 @@ HTML & CSS and Javascript
 
 <<<<<<< HEAD
 # live demo
-Find the live demo [here](https://grace-mugoiri.github.io/Restaurant-Page/dist/index.html).
+Find the live demo [here](https://grace-mugoiri.github.io/Restaurant-Page/dist/index.html)
 =======
 # find the live demo [here](https://grace-mugoiri.github.io/Restaurant-Page/dist/index.html)
 >>>>>>> 2ab9f47dc2d6b34e0baee6b244dda3851f660ae1
