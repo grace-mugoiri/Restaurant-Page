@@ -19,4 +19,5 @@ clone the repo to your prefered folder/directory. Then simply open the html file
 
 # screenshot of home page
 
+<img width="1385" alt="Screenshot 2022-08-16 at 17 21 02" src="https://user-images.githubusercontent.com/20679425/184903414-fc99700c-cd0c-4ffb-976f-2792afaad3d3.png">
 
